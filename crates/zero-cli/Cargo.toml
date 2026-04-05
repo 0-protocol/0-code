@@ -1,0 +1,26 @@
+[package]
+name = "zero-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "zero-code"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { workspace = true }
+clap = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+anyhow = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+zero-core = { path = "../zero-core" }
+zero-llm = { path = "../zero-llm" }
+zero-tools = { path = "../zero-tools" }
+zero-tui = { path = "../zero-tui" }
+
+[dev-dependencies]
+zero-core = { path = "../zero-core" }
+zero-tools = { path = "../zero-tools" }

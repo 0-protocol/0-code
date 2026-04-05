@@ -1,0 +1,29 @@
+# Rust
+/target/
+**/*.rs.bk
+*.pdb
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# IDE / editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Debugging / profiling
+*.log
+*.dSYM/
+
+# Test / coverage
+tarpaulin-report.html
+cobertura.xml
+lcov.info
+
+# OS
+Thumbs.db

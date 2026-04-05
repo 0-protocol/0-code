@@ -1,0 +1,20 @@
+[package]
+name = "zero-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+async-trait = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+anyhow = { workspace = true }
+uuid = { workspace = true }
+chrono = { workspace = true }
+zero-llm = { path = "../zero-llm" }
+zero-tools = { path = "../zero-tools" }
+zero-perms = { path = "../zero-perms" }
+zero-context = { path = "../zero-context" }
